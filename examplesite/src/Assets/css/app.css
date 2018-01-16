@@ -54,6 +54,11 @@ footer{
   height: auto;
   width: 100%;
 }
+.footerHeader{
+  height: 50px;
+  width: 100%;
+  background-color: black;
+}
 footer ul{
   margin-top: 20px;
 }
@@ -75,9 +80,18 @@ footer li a{
 .footer-social ul a{
   text-decoration: none;
 }
-
+.contactFooterList{
+  text-align: center;
+}
+footer a:hover{
+  text-decoration: none;
+  color: red;
+}
 .footer-copyright{
   margin: auto;
   text-align: center;
   border-top: 1px solid black;
+}
+.footer-copyright p{
+  margin-top: 10px;
 }
