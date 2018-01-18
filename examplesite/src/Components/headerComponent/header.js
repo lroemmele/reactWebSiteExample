@@ -23,27 +23,25 @@ class Header extends Component {
             <span className="navbar-toggler-icon"></span>
           </button>
 
+            {/*nav links*/}
+            <div className="collapse navbar-collapse " id="navbarSupportedContent">
+              <ul className="navbar-nav ">
+                <li className="nav-item active">
+                  <Link className="nav-link" to="/">Home</Link>
+                </li>
+                <li className="nav-item">
+                  <Link className="nav-link" to="/Products">Products</Link>
+                </li>
+                <li className="nav-item">
+                  <Link className="nav-link" to="/Aboutpage">About Us</Link>
+                </li>
+                <li className="nav-item">
+                  <Link className="nav-link" to="/Contact">Contact Us</Link>
+                </li>
+              </ul>
+            </div>
 
-          <div className="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
-            <ul className="navbar-nav ">
-              <li className="nav-item active">
-                <Link className="nav-link" to="/">Home</Link>
-              </li>
-              <li className="nav-item">
-                <Link className="nav-link" to="/Products">Products</Link>
-              </li>
-              <li className="nav-item">
-                <Link className="nav-link" to="/Aboutpage">About Us</Link>
-              </li>
-              <li className="nav-item">
-                <Link className="nav-link" to="/Contact">Contact Us</Link>
-              </li>
-            </ul>
-
-
-          </div>
           </nav>
-
         </div>
       </header>
     );
