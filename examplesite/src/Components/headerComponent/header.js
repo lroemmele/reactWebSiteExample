@@ -5,14 +5,15 @@ import {Link} from 'react-router-dom';
 class Header extends Component {
   render() {
     return (
-      <header>
+
        <div className="container-fluid">
+        <div className="jumbotron">
 
         {/*collapse navbar at 576px for mobile view*/}
-        <nav className="navbar navbar-expand-sm navbar-light ">
+        <nav className="navbar navbar-expand-sm navbar-light">
 
           {/*brand logo image*/}
-          <Link className="navbar-brand" to="/"><img src="https://cdn.pixabay.com/photo/2017/09/23/21/24/label-2780155__480.png" width="100px"/></Link>
+          <Link className="navbar-brand" to="/"><img src="https://logopond.com/logos/4a614224e9d4a4fb2c629fd3d18208a9.png" width="150px"/></Link>
 
           {/*toggle mobile button on below 576px*/}
           <button className="navbar-toggler" type="button"
@@ -27,23 +28,23 @@ class Header extends Component {
             <div className="collapse navbar-collapse " id="navbarSupportedContent">
               <ul className="navbar-nav ">
                 <li className="nav-item active">
-                  <Link className="nav-link" to="/">Home</Link>
+                  <Link className="nav-link" to="/" >Home</Link>
                 </li>
                 <li className="nav-item">
-                  <Link className="nav-link" to="/Products">Products</Link>
+                  <Link className="nav-link" to="/Products" >Products</Link>
                 </li>
                 <li className="nav-item">
-                  <Link className="nav-link" to="/Aboutpage">About Us</Link>
+                  <Link className="nav-link" to="/Aboutpage" >About Us</Link>
                 </li>
                 <li className="nav-item">
-                  <Link className="nav-link" to="/Contact">Contact Us</Link>
+                  <Link className="nav-link" to="/Contact" >Contact Us</Link>
                 </li>
               </ul>
             </div>
 
           </nav>
         </div>
-      </header>
+      </div>
     );
   }
 }

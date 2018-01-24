@@ -6,16 +6,15 @@ body{
 /*
 header componet css
 */
-header{
-  position: relative;
-  display: block;
-  height: 200px;
-  width: 100%;
+
+.jumbotron{
   background-image: url("https://mdbootstrap.com/img/Photos/Others/architecture.jpg");
-  background-size: cover;
-  background-position: 100% 100%;
   background-repeat: no-repeat;
-  overflow: hidden;
+  background-size: cover;
+
+}
+.navbar-nav li a:hover{
+    background-color: red;
 }
 
 
