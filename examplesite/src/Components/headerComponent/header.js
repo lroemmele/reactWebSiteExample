@@ -1,9 +1,16 @@
 import React, { Component } from 'react';
 import {Link} from 'react-router-dom';
 
-
 class Header extends Component {
+
+ collapseNavMenu () {
+
+     if(window.innerWidth <= 576){
+      document.getElementById('navbarSupportedContent').collapse('hide');
+    }
+  }
   render() {
+
     return (
 
        <div className="container-fluid">
@@ -28,16 +35,16 @@ class Header extends Component {
             <div className="collapse navbar-collapse " id="navbarSupportedContent">
               <ul className="navbar-nav ">
                 <li className="nav-item active">
-                  <Link className="nav-link" to="/" >Home</Link>
+                  <Link className="nav-link" to="/" onClick={this.collapseNavMenu} >Home</Link>
                 </li>
                 <li className="nav-item">
-                  <Link className="nav-link" to="/Products" >Products</Link>
+                  <Link className="nav-link" to="/Products" onClick={this.collapseNavMenu}>Products</Link>
                 </li>
                 <li className="nav-item">
-                  <Link className="nav-link" to="/Aboutpage" >About Us</Link>
+                  <Link className="nav-link" to="/Aboutpage" onClick={this.collapseNavMenu} >About Us</Link>
                 </li>
                 <li className="nav-item">
-                  <Link className="nav-link" to="/Contact" >Contact Us</Link>
+                  <Link className="nav-link" to="/Contact" onClick={this.collapseNavMenu} >Contact Us</Link>
                 </li>
               </ul>
             </div>
